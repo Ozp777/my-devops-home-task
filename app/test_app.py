@@ -14,4 +14,3 @@ def test_echo():
     resp = client.post("/echo", json=payload)
     assert resp.status_code == 200
     assert resp.get_json() == payload
-
