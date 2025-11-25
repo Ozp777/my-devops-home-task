@@ -31,8 +31,8 @@ pipeline {
             steps {
                 echo 'מריץ flake8 על קוד האפליקציה...'
                 dir('app') {
-                    sh 'python3 -m pip install --user flake8'
-                    sh '~/.local/bin/flake8 . || flake8 .'
+                    sh 'python3 -m pip install flake8'
+                    sh 'python3 -m flake8 .'
                 }
             }
         }
